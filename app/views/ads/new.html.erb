@@ -1,11 +1,5 @@
-<html>
-<head>
-  <title>  </title>
-</head>
-
-<body>
-
 <h1> New ad </h1>
+
 <%= form_for(:ad,:url=>{:action=>'create'}) do |f| %>
   <p><b>Name</b><br /><%= f.text_field :name %></p>
   <p><b>Description</b><br /><%= f.text_area :description %></p>
@@ -15,5 +9,4 @@
   <p><b>Img url</b><br /><%= f.text_field :img_url %></p> 
   <p><%= f.submit "Create" %></p>
 <% end %>
-</body>
-</html>
+
